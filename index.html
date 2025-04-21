@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PKI Key Generation</title>
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #keys {
+            margin-top: 20px;
+            word-wrap: break-word;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+
+        textarea {
+            width: 30%;
+            height: 40px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>PKI Key Generator</h1>
+    <button onclick="generateKeyPair()">Generate Key Pair</button>
+
+    <div id="keys">
+        <h3>Public Key</h3>
+        <textarea id="publicKey" readonly></textarea>
+
+        <h3>Private Key (Download this securely!)</h3>
+        <textarea id="privateKey" readonly></textarea>
+        <br>
+        <button onclick="downloadPrivateKey()">Download Private Key</button>
+    </div>
+
+</body>
+
+</html>
